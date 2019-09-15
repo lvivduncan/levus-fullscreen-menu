@@ -1,0 +1,48 @@
+
+/* кнопка */
+#menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-image: url('data:image/gif;base64,R0lGODlhZAAoANUAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAACAALAAAAABkACgAAAb/QJBwSCwaj8iksghYOonNJWBKrVqv2KyWquQ+pVPwdkwuJ63fc7VbbrvRR2zaKEe+7+54dj7U2vGAW3SCc2N6gYhwfWRpZkyJkGGPhk6Ok5GIh4RqlIOYmZp+f518paacm1CMp6ytqqQglq6zp5aytLh8Zre5vV+Yv5+glYmNwoHGgIXHyslvusx40HnT0dTLvE/Wd6bZ2tvXzrDB4N6o5uflouTPvu61yO/y7M3z9qHx9/qxjOj7tLZWsVE37lUqfgUNEtwz6qAQdAsTmpsYcZ1ChunqeKp4ZaPFjB09cvRySSOxj4tGKiq5BltIfCozdnsJc+RASTNJ/vOlM+fOB3lRXAVNEgQAOw==');
+    background-position: 0 0;
+    height: 40px;
+    width: 50px;
+    z-index: 7;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+#menu.close{
+    background-position: -50px 0;
+}
+
+/* саме меню */
+#nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+    background: rgba(0,0,0,.95);
+    display: none;
+}
+
+#nav.open{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #nav.open ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+        #nav.open li{
+            padding: 10px 0;
+        }
+            #nav.open li a{
+                color: #fff;
+            }
